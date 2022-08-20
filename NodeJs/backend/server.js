@@ -38,10 +38,6 @@ try {
     new userController().store(JSON.parse(data));
     });
 
-    }else if(req.method ==='GET' &&req.url === '/'){
-        new userController().show(res);
-    }else if(req.method ==='DELETE'){
-    new userController().delete();
     }
 
     res.end();

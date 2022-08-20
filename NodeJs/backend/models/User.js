@@ -42,24 +42,6 @@ class User extends DB{
               });
              
     }
-
-   
-    
-    showUserData(res){ 
-
-        let sql = "SELECT * FROM users";
-        this.con().query(sql, function (err, result) {
-          if (err) throw (err);
-
-       res.end(JSON.stringify(result),function(err){
-      });
-
-        })
-        .then(results=>results);
-
-      }
-
-
   
 }
 

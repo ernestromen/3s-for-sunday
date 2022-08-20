@@ -7,14 +7,6 @@ const {User} = require('../models/User');
          new User().storeUserData(data);
      }
 
-    show(res){
-      new User().showUserData(res);
-    }
-
-    delete(){
-      new User().deleteAllUserData();
-
-    }
   }
   
  
