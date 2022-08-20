@@ -107,4 +107,3 @@ class ScanResults{
 
 print_r(json_encode(new ScanResults($typename,$totalSize,$totalItems,new Results($folders))));
 
-
