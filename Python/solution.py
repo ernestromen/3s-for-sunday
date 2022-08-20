@@ -1,5 +1,4 @@
 import requests
-import decimal
 import math
 
 class PriceConverter:
