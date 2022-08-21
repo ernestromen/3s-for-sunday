@@ -9,6 +9,8 @@ const UseValidate = ()=> {
       });
 
     const validate = (values) =>{
+      let pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; 
+
         if(!values.name){
           setErrors(state=>({...state,'name':'name is required'}));
         }else{
@@ -24,7 +26,7 @@ const UseValidate = ()=> {
           setErrors(state=>({...state,'company':''}));
         }
 
-        if(!values.email){
+        if(!pattern.test(values.email)){
 
           setErrors(state=>({...state,'email':'wrong email, please try again'}));
         }else{
